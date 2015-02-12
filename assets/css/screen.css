@@ -1774,3 +1774,57 @@ body:not(.post-template) .post-title {
    End of file. Animations should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.
    ========================================================================== */
+
+
+.navigation {
+float:right;
+font-size:1.1em;
+margin:17px 0;
+}
+
+.navigation ul {
+float:left;
+list-style:none;
+margin:0;
+}
+
+.navigation li {
+float:left;
+text-align:left;
+padding:0 15px;
+}
+
+.navigation li:last-child {
+padding-right:0;
+}
+
+.site-header {
+float: left;
+position: fixed;
+width: 100%;
+padding: 0 2.5%;
+margin-bottom: 40px;
+z-index: 300;
+font-family: "Lato",sans-serif;
+}
+
+.site-header .blog-title a:link,.site-header .blog-title a:visited,.copyright a:hover,.social-media a:hover,.read-more a:link,.read-more a:visited,.navigation a:link,.navigation a:visited {
+color:#fff;
+text-decoration: none;
+}
+
+.site-header a:hover,.site-footer a:hover {
+color:#3dc9b3;
+}
+
+.wrapper {
+position:relative;
+width:100%;
+height:100%;
+max-width:1170px;
+margin:0 auto;
+}
+
+.site-header.dark {
+background:#242830;
+}

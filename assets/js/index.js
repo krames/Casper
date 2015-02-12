@@ -59,7 +59,13 @@
 
         $(".scroll-down").arctic_scroll();
 
-    });
+	$(window).scroll(function() {
+            var b = $(document).scrollTop();
+            (0 == $(".no-image").length && (b >= 10)) ? $(".site-header").addClass("dark") : $(".site-header").removeClass("dark")
+	    });
+
+
+	});
 
     // smartresize
     jQuery.fn[sr] = function(fn) { return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
